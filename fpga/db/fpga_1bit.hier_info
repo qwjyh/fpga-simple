@@ -1,0 +1,18 @@
+|fpga_1bit
+Y <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst16.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => CLK_OUT.DATAIN
+CLK => inst.CLK
+CLK => inst1.CLK
+X1 => inst2.DATAIN
+X2 => inst3.DATAIN
+DFF_A <> inst
+DFF_B <> inst1
+CLK_OUT <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Y_copy <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.DATAIN
+B => inst1.DATAIN
+
+
